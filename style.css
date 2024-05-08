@@ -1,0 +1,717 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.supper .nav{
+    width: 100%;
+    height: 7vh;
+    background-color: #000000;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    z-index: 99;
+   
+
+}
+
+.supper .nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  
+ 
+}
+
+/* li {
+  float: left;
+} */
+
+.supper .nav  li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.supper .nav li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(139, 138, 138);
+}
+
+.supper .nav li.dropdown {
+  display: inline-block;
+}
+
+.supper .nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.supper .nav .dropdown-content a {
+  color: black;  padding: 12px 16px;
+  text-decoration: none;   display: block;
+  text-align: left;
+}
+
+.supper .nav .dropdown-content a:hover {background-color: #b9b5b5;}
+.supper .nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.supper .nav p a{
+    display: inline-block;
+    color: white;
+    padding: 13px 13px;  
+}
+
+.supper .nav p a:hover{
+    background-color: red;
+}
+
+.supper .banner{
+    background: url(img/pexels-gustavo-anacleto-3364190.jpg) no-repeat center/cover;
+    height: 700px;
+}
+
+.supper .banner .banner-text{
+    color: white;
+    text-align: center;
+    padding-top: 600px;
+}
+
+.supper .banner .text-up{
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+ .supper .banner .text-down{
+    font-weight: 700px;
+ }
+
+ .supper .band{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20%;
+
+ }
+
+ .supper .head{
+    font-size: 30px;
+ }
+
+ .supper .middle{
+    color: rgb(168, 166, 166);
+    margin: 20px 0;
+ }
+
+ .supper .text-text{
+    text-align: justify;
+    font-size: 12px;
+ }
+
+ .supper .names{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 30px 0;
+    gap: 0 20%;
+ }
+
+ .supper .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ }
+
+ .supper .band .name img{
+    width: 150px;
+    border-radius: 3px;
+
+ }
+
+ .supper .tour{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  padding: 100px 0;
+  
+ }
+
+ .supper .tour .head{
+  color: white;
+  font-size: 30px;
+ }
+
+ .supper .tour .middle{
+  margin: 20px 0;
+ }
+
+ .supper .tour .ticket{
+  background-color: white;
+  width: 60%;
+  margin-bottom: 40px;
+
+ }
+
+ .supper .tour .ticket p{
+  padding: 12px 10px;
+  border-bottom: 0.1px solid gray;
+ }
+
+ .supper .tour .ticket span{
+  background-color: rgb(247, 57, 57);
+  padding: 7px 10px;
+  padding-left: 20px;
+  color: white;
+  margin-left: 10px;
+  
+ }
+
+ .supper .tour .ticket .num{
+  background-color: black;
+  border-radius: 50%;
+  padding: 3px 8px;
+  margin-left: 80%;
+  font-size: 13px;
+ }
+
+ .supper .tour .cites{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+
+ }
+
+ .supper .tour .city img{
+  width: 225px;
+ }
+
+ .supper .tour .city .texts{
+  background-color: white;
+  color: black;
+  width: 226px;
+  padding: 10px;
+  margin-top: -3px;
+ }
+
+ .supper .tour .city .texts .head-1{
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+ }
+ .supper .tour .city .texts .mid{
+  color: black;
+  font-size: 15px;
+  color: rgb(167, 164, 164);
+  margin: 10px 0;
+ }
+ .supper .tour .city .texts button{
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  margin: 15px 0;
+  padding: 10px 10px;
+ }
+
+ .supper .tour .city img:hover{
+  opacity: 0.5;
+ }
+
+ .supper .contact{
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0;
+ 
+ }
+
+ .supper .contact .head{
+  font-size: 35px;
+  text-align: center;
+  
+ }
+ .supper .contact .middle{
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 0;
+  color: rgb(172, 168, 168);
+ }
+
+ .supper .contact .forms{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  padding: 0 20%;
+ }
+
+ .supper .contact .forms .details{
+  width: 70%;
+ }
+
+ 
+ .supper .contact .forms .details p{
+  margin: 10px 0;
+  font-size: 13px;
+ }
+
+ .supper .contact .forms .details span{
+  margin-left: 10px ;
+  
+ }
+ .supper .contact .forms form {
+  width: 100%;
+  padding-top: 20px;
+  
+ }
+ .supper .contact .forms form input {
+  width: 48%;
+  margin: 5px 0;
+  height: 30px;
+  text-indent: 5px;
+
+ }
+ .supper .contact .forms form .msg{
+  width: 98%;
+ 
+ }
+ .supper .contact .forms form #but{
+  margin: 5px 0 0 83%;
+  padding: 5px 5px;
+  color: white;
+  background-color: black;
+  border: none;
+ 
+ }
+
+ .supper footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(172, 171, 171);
+  
+ }
+ .supper footer .socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: rgb(172, 171, 171);
+  gap: 5px;
+  font-size: 20px;
+  padding: 50px 0 20px 0;
+  
+ }
+
+ .supper footer .socials p{
+  font-size: 20px;
+ }
+ .supper footer .socials p:hover{
+  opacity: 0.5;
+ }
+ .hero footer .copy a{
+  color: #a09e9e;
+}
+
+@media screen and (max-width:320px){
+  .supper .nav{
+    width: 320px;
+   
+
+}
+
+.supper .nav  li a, .dropbtn {
+  
+  padding: 3px 3px;
+  font-size: 10px;
+  
+}
+
+.supper .nav p a{
+ 
+  padding: 10px 10px;  
+  font-size: 10px;
+}
+
+.supper .banner{
+ 
+  height: 500px;
+}
+
+.supper .banner .banner-text{
+  
+  padding-top: 400px;
+  font-size: 10px;
+}
+
+.supper .band .head{
+  font-size: 20px;
+}
+
+.supper .band .middle{
+  font-size: 11px;
+}
+
+.supper .band .text-text{
+  font-size: 11px;
+} 
+.supper .names{
+  display: flex;
+  margin: 50px 0 10px 0;
+  flex-wrap: wrap;
+}
+
+.supper .name{
+  padding-top: 15px;
+  padding-bottom: -3px;
+  gap: 7px;
+}
+
+.supper .tour .head{
+  
+  font-size: 17px;
+ }
+
+ .supper .tour .middle{
+  
+  font-size: 11px;
+ }
+
+ .supper .tour .ticket{
+  width: 300px;
+
+ }
+
+ .supper .tour .ticket p{
+  font-size: 13px;
+ }
+
+ .supper .tour .ticket span{
+  font-size: 11px;
+  
+ }
+
+ .supper .tour .ticket .num{
+  margin-left: 65%;
+  font-size: 11px;
+  
+ }
+
+.supper .tour .cites{
+  display: flex;
+  flex-wrap: wrap;
+
+ }
+
+ .supper .tour .city img{
+  width: 190px;
+ }
+
+ .supper .tour .city .texts{
+  width: 190px;
+ }
+
+ .supper .tour .city .texts .head-1{
+  font-size: 15px;
+  font-weight: 500;
+ }
+
+ .supper .tour .city .texts .mid{
+  font-size: 12px;
+
+ }
+ .supper .tour .city .texts .text{
+  font-size: 13px;
+  font-family: cursive;
+  font-weight: 100px;
+
+ }
+
+ .supper .tour .city .texts button{
+  font-size: 10px;
+  margin: 12px 0;
+  padding: 8px 8px;
+ }
+
+ .supper .contact .head{
+  font-size: 20px;
+ }
+
+ .supper .contact .middle{
+  font-size: 11px;
+  text-align: center;
+  margin: 1px 0;
+  color: rgb(172, 168, 168);
+ }
+
+ .supper .contact .forms .details p{
+  margin: 10px 0;
+  font-size: 13px;
+ }
+
+ .supper .contact .forms form input {
+  width: 170px;
+  margin: 5px 0;
+  height: 20px;
+  text-indent: 2px;
+
+ }
+
+ .supper .contact .forms form #but{
+  margin: 3px 0 0 120px;
+  padding: 3px 3px;
+  
+ 
+ 
+ }
+
+ .supper .map img{
+  width: 320px;
+ }
+
+
+}
+
+
+
+/* @media screen and (max-width:375px){
+  .supper .nav{
+    width: 375px;
+   
+
+}
+
+.supper .banner{
+  background-size: cover;
+  height: 375px;
+}
+
+.supper .map img{
+  width: 375px;
+ }
+
+ .supper .tour .cites{
+  display: flex;
+  flex-wrap: wrap;
+
+ }
+
+ .supper .names{
+  display: flex;
+  margin: 50px 0 10px 0;
+  flex-wrap: wrap;
+}
+
+} */
+
+
+
+@media screen and (max-width:360px){
+  .supper .nav{
+    width: 360px;
+    position: fixed;
+
+}
+
+.supper .nav  li a, .dropbtn {
+  
+  padding: 5px 5px;
+  font-size: 13px;
+  
+}
+
+.supper .nav p a{
+ 
+  /* padding: 5px 5px;   */
+  font-size: 13px;
+  
+  color:white;
+
+}
+
+.supper .banner{
+ 
+  height: 400px;
+}
+
+.supper .banner .banner-text{
+  
+  padding-top: 300px;
+  font-size: 11px;
+}
+
+.supper .banner .banner-text{
+  
+  padding-top: 300px;
+  font-size: 15px;
+  color:white;
+}
+
+.supper .band .head{
+  font-size: 20px;
+}
+
+.supper .band .middle{
+  font-size: 13px;
+}
+
+.supper .band .text-text{
+  font-size: 14px;
+} 
+
+.supper .names{
+  display: flex;
+  margin: 50px 0 10px 0;
+  flex-wrap: wrap;
+}
+
+.supper .name{
+  padding-top: 15px;
+  padding-bottom: -3px;
+  gap: 7px;
+}
+
+.supper .tour .head{
+  
+  font-size: 20px;
+ }
+
+ .supper .tour .middle{
+  
+  font-size: 13px;
+ }
+
+ .supper .tour .ticket{
+  width: 330px;
+
+ }
+
+ .supper .tour .ticket p{
+  font-size: 14px;
+ }
+
+ .supper .tour .ticket span{
+  font-size: 13px;
+  
+ }
+
+ .supper .tour .ticket .num{
+  margin-left: 65%;
+  font-size: 13px;
+  
+ }
+
+ .supper .tour .cites{
+  display: flex;
+  flex-wrap: wrap;
+
+ }
+
+.supper .tour .cites{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+ }
+
+ .supper .tour .city img{
+  width: 225px;
+ }
+
+ .supper .tour .city .texts{
+  width: 225px;
+ }
+
+ .supper .tour .city .texts .head-1{
+  font-size: 17px;
+  font-weight: 600;
+ }
+
+ .supper .tour .city .texts .mid{
+  font-size: 13px;
+
+ }
+ .supper .tour .city .texts .text{
+  font-size: 14px;
+  font-family: cursive;
+  font-weight: 100px;
+
+ }
+
+ .supper .tour .city .texts button{
+  font-size: 13px;
+  margin: 12px 0;
+  padding: 10px 10px;
+ }
+
+ .supper .contact .head{
+  font-size: 25px;
+ }
+
+ .supper .contact .middle{
+  font-size: 13px;
+  text-align: center;
+  margin: 3px 0;
+  color: rgb(172, 168, 168);
+ }
+
+ .supper .contact .forms .details p{
+  margin: 10px 0;
+  font-size: 13px;
+ }
+
+ .supper .contact .forms form input {
+  width: 170px;
+  margin: 5px 0;
+  height: 25px;
+  text-indent: 5px;
+
+ }
+
+ .supper .contact .forms form #but{
+  margin: 3px 0 0 120px;
+  padding: 4px 4px;
+  
+ 
+ 
+ }
+
+
+
+
+.supper .map img{
+  width: 360px;
+ }
+
+
+
+ 
+}
+
+   
+    
+    
+  
